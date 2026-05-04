@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV — Abdessamad Echarhbili</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/components.css"/>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- React + ReactDOM + Babel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.development.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="header-photo1">
+        <img src="images/profile.jpg" alt="Abdessamad Echarhbili" />
+    </div>
+    <span class="nav-logo">A.Echarhbili</span>
+    <ul class="nav-links">
+      <li><a href="#header"    class="nav-link">Accueil</a></li>
+      <li><a href="#about"     class="nav-link">À propos</a></li>
+      <li><a href="#skills"    class="nav-link">Compétences</a></li>
+      <li><a href="#formation" class="nav-link">Formation</a></li>
+      <li><a href="#projects"  class="nav-link">Projets</a></li>
+      <li><a href="#contact"   class="nav-link">Contact</a></li>
+    </ul>
+    <button id="menu-toggle" aria-label="Menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+  <!-- menu mobile -->
+  <ul class="nav-mobile" id="nav-mobile">
+    <li><a href="#header"    class="nav-link">Accueil</a></li>
+    <li><a href="#about"     class="nav-link">À propos</a></li>
+    <li><a href="#skills"    class="nav-link">Compétences</a></li>
+    <li><a href="#formation" class="nav-link">Formation</a></li>
+    <li><a href="#projects"  class="nav-link">Projets</a></li>
+    <li><a href="#contact"   class="nav-link">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- HEADER -->
+  <section id="header">
+    <div class="container header-inner">
+      <div class="header-photo">
+        <img src="images/profile.jpg" alt="Abdessamad Echarhbili" />
+      </div>
+      <div class="header-info">
+        <p class="label">Bonjour, je suis</p>
+        <h1 class="header-name">Abdessamad Echarhbili</h1>
+        <p class="header-title">Étudiant en S4 Informatique · Développeur Web en formation</p>
+        <div class="header-contacts">
+          <a href="mailto:a.echarhbili6952@uca.ac.ma" class="contact-chip">
+            <i class="fa-solid fa-envelope"></i> a.echarhbili6952@uca.ac.ma
+          </a>
+          <a href="https://www.linkedin.com/in/abdessamad-echarhbili-59b7ba37a" class="contact-chip" target="_blank">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/aecharhbili6952-byte" class="contact-chip" target="_blank">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header-glow"></div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section id="about">
+    <div class="container">
+      <p class="label">Qui suis-je</p>
+      <h2 class="section-title">À propos de moi</h2>
+      <p class="about-text">
+      Je suis étudiant de <strong>S4 en informatique à la Faculté des Sciences Semlalia</strong> de l’Université Cadi Ayyad à Marrakech. Passionné par le développement web, la résolution de problèmes complexes et la création de jeux vidéo 2D simples, j’ai développé un réel intérêt pour la programmation.
+      Mon parcours du S1 au S4 m’a permis d’acquérir de solides bases, notamment dans le développement front-end, allant de la structure HTML/CSS jusqu’à la logique JavaScript côté client.
+      <br><br>
+      J’aime concevoir des interfaces claires, modernes et fonctionnelles. En dehors des cours, je travaille sur des projets personnels afin de consolider mes acquis et d’explorer de nouvelles technologies.
+      <br>
+      Mon objectif est de devenir <strong>développeur full-stack</strong> et de contribuer à des projets ayant un impact réel.
+      </p>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section id="skills">
+    <div class="container">
+      <p class="label">Ce que je maîtrise</p>
+      <h2 class="section-title">Compétences</h2>
+
+      <div class="skills-grid" id="skills-bars">
+        <!-- Colonne gauche -->
+        <div>
+          <div class="skill-item">
+            <div class="skill-header"><span>HTML5 / CSS3</span><span>80%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar" data-level="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span>JavaScript (DOM)</span><span>65%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar" data-level="65"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span>Langage C</span><span>80%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar" data-level="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span>Langage C++</span><span>80%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar" data-level="80"></div></div>
+          </div>
+        </div>
+        <!-- Colonne droite -->
+        <div>
+          <div class="skill-item">
+            <div class="skill-header"><span>Modélisation UML</span><span>70%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar" data-level="70"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span>Langage SQL</span><span>60%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar" data-level="60"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span>Git / GitHub</span><span>60%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar" data-level="60"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span>Logiciels de bureau</span><span>90%</span></div>
+            <div class="skill-bar-bg"><div class="skill-bar" data-level="90"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft skills -->
+      <div class="soft-skills" id="soft-tags">
+        <span class="tag">Travail en équipe</span>
+        <span class="tag">Curieux</span>
+        <span class="tag">Autonome</span>
+        <span class="tag">Organisé</span>
+        <span class="tag">Communication</span>
+        <span class="tag">Résolution de problèmes</span>
+        <span class="tag">Vite à apprendre</span>
+        <span class="tag">Travail sous pression</span>
+        <span class="tag">Passion</span>
+        <span class="tag">Ambition</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMATION — Accordéon jQuery -->
+  <section id="formation">
+    <div class="container">
+      <p class="label">Mon parcours académique</p>
+      <h2 class="section-title">Formation</h2>
+
+      <div class="accordion" id="accordion">
+
+        <div class="acc-item">
+          <button class="acc-trigger" type="button">
+            <span>S3 & S4 — Université Cadi Ayyad, FSS Marrakech</span>
+            <i class="fa-solid fa-chevron-down acc-icon"></i>
+          </button>
+          <div class="acc-body">
+            <span class="acc-year">2025 – 2026</span>
+            <p>programmation C/C++, POO, bases de données relationnelles (SQL),
+               prog.web (HTML/CSS/JS), Modélisation UML, systèmes d'exploitation et architécture des ordinateurs.
+               Projets : Site web static (sur la tourisme), Jeu video 2d C++/SFML, CV interactif déployé sur GitHub Pages.
+               <br>S3 : 14/20</p>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-trigger" type="button">
+            <span>S1 & S2 — Université Cadi Ayyad, FSS Marrakech</span>
+            <i class="fa-solid fa-chevron-down acc-icon"></i>
+          </button>
+          <div class="acc-body">
+            <span class="acc-year">2024 – 2025</span>
+            <p>Algorithme, programmation python, mathématiques discrètes, logique et physiques
+               <br>S1 : 13/20 &nbsp;|&nbsp; S2 : 14/20</p>
+          </div>
+        </div>
+
+        <div class="acc-item">
+          <button class="acc-trigger" type="button">
+            <span>Baccalauréat en Sciences Physiques</span>
+            <i class="fa-solid fa-chevron-down acc-icon"></i>
+          </button>
+          <div class="acc-body">
+            <span class="acc-year">2024</span>
+            <p>Lycée Al Khawarizmi, Taznakht — Ouarzazate.<br> Mention 14/20 evec mention 15/20 en régional</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS — composants React -->
+  <section id="projects">
+    <div class="container">
+      <p class="label">Ce que j'ai construit</p>
+      <h2 class="section-title">Projets</h2>
+      <div id="react-projects"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT — composant React -->
+  <section id="contact">
+    <div class="container">
+      <p class="label">Me contacter</p>
+      <h2 class="section-title">Contact</h2>
+      <div id="react-contact"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Conçu & développé par <strong>Abdessamad Echarhbili</strong> — S4 Informatique · 2025</p>
+</footer>
+
+<!-- Toast notification -->
+<div id="toast">
+  <i class="fa-solid fa-circle-check"></i>
+  <span id="toast-msg">Message envoyé !</span>
+</div>
+
+<script src="js/jquery-scripts.js"></script>
+<script type="text/babel" src="js/components.jsx"></script>
+
+</body>
+</html>
