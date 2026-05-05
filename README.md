@@ -87,7 +87,7 @@ username.github.io
 git init
 git add .
 git commit -m "init: cv project"
-git remote add origin https://github.com/username/username.github.io.git
+git remote add origin https://github.com/username/username.github.io.git 
 git push -u origin main
 ```
 
